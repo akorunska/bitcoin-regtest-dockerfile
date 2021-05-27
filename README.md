@@ -21,6 +21,11 @@ bitcoin-cli -regtest getbalances
 bitcoin-cli -regtest getbalance
 ```
 
+Load wallet, if it already exists:
+```
+bitcoin-cli loadwallet 'mywallet'
+```
+
 Explore blocks and transactions:
 ```
 bitcoin-cli -regtest getbestblockhash
