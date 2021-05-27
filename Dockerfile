@@ -25,6 +25,6 @@ RUN make install
 
 
 # copy bitcoin.conf
-ADD . /.bitcoin
+ADD . /root/.bitcoin
     
-RUN bitcoind -regtest -daemon
+# RUN bitcoind -regtest -daemon
