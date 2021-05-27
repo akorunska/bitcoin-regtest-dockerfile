@@ -14,7 +14,7 @@ RUN git checkout v0.21.0
 
 # clone and make bitcoin
 RUN apt-get install --yes build-essential libtool autotools-dev automake pkg-config bsdmainutils python3
-RUN apt-get install --yes libevent-dev libboost-dev libboost-system-dev libboost-filesystem-dev libboost-test-dev
+RUN apt-get install --yes libevent-dev libboost-dev libboost-system-dev libboost-filesystem-dev libboost-test-dev libboost-all-dev
 # libboost-thread-dev libboost-all-dev
 RUN apt-get install --yes libsqlite3-dev
 RUN sh contrib/install_db4.sh $(pwd)
@@ -24,7 +24,7 @@ RUN make
 RUN make install
 
 
-# # copy bitcoin.conf
+# copy bitcoin.conf
 ADD . /.bitcoin
     
 RUN bitcoind -regtest -daemon
