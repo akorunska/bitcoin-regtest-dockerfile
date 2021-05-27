@@ -23,7 +23,7 @@ bitcoin-cli -regtest getbalance
 
 Load wallet, if it already exists:
 ```
-bitcoin-cli loadwallet 'mywallet'
+bitcoin-cli -regtest loadwallet 'mywallet'
 ```
 
 Explore blocks and transactions:
