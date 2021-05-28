@@ -17,7 +17,7 @@ Create wallet:
 bitcoin-cli -regtest createwallet "mywallet"
 ```
 
-Or loadad wallet, if it already exists:
+Or load wallet, if it already exists:
 ```
 bitcoin-cli -regtest loadwallet 'mywallet'
 ```
